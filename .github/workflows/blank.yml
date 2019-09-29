@@ -28,6 +28,8 @@ jobs:
         cd ..
         echo $(pwd)
         cd gatsby-blog/public
+        git config user.name "hebinhao1993"
+        git config user.email "hebinhao1993@outlook.com"
         git init
         git add --all .
         git commit -m "Action Auto Builder"
