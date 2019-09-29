@@ -33,6 +33,6 @@ jobs:
         git config --global user.email "hebinhao1993@outlook.com"
         git add --all .
         git commit -m "Action Auto Builder"
-        git push --quiet --force https://$ACCESS_TOKEN@github.com/hebinhao1993/test.git gh-pages
+        git push --quiet --force https://$ACCESS_TOKEN@github.com/hebinhao1993/test.git master:gh-pages
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
