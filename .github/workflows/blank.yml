@@ -28,9 +28,9 @@ jobs:
         cd ..
         echo $(pwd)
         cd gatsby-blog/public
-        git config user.name "hebinhao1993"
-        git config user.email "hebinhao1993@outlook.com"
         git init
+        git config --global user.name "hebinhao1993"
+        git config --global user.email "hebinhao1993@outlook.com"
         git add --all .
         git commit -m "Action Auto Builder"
         git push --quiet --force https://$ACCESS_TOKEN@github.com/hebinhao1993/hebinhao1993.github.io.git gh-pages
