@@ -9,7 +9,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [8.x, 10.x, 12.x]
+        node-version: [10.x]
 
     steps:
     - uses: actions/checkout@v1
@@ -24,7 +24,7 @@ jobs:
         rm -rf gatsby-blog/content/blog/
         mv blog gatsby-blog/content/
         cd gatsby-blog
-        gatsby-build
+        gatsby build
         cd ..
         echo $(pwd)
       env:
